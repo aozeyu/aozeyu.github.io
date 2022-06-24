@@ -10,6 +10,7 @@ function Sakura(x, y, s, r, fn) {
     this.r = r;
     this.fn = fn;
 }
+
 Sakura.prototype.draw = function (cxt) {
     cxt.save();
     var xc = 40 * this.s / 4;
@@ -134,6 +135,7 @@ function startSakura() {
         stop = requestAnimationFrame(arguments.callee);
     })
 }
+
 window.onresize = function () {
     var canvasSnow = document.getElementById('canvas_snow');
 }
